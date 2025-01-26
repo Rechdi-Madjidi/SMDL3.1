@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4442D0B9-D46A-4394-8304-71CD9A9AEE25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMDL</RootNamespace>
+    <AssemblyName>SMDL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="Forms\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Affaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Affaire.Designer.cs">
+      <DependentUpon>Affaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bmi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bmi.Designer.cs">
+      <DependentUpon>Bmi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChLogin.Designer.cs">
+      <DependentUpon>ChLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmailSiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmailSiting.Designer.cs">
+      <DependentUpon>EmailSiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Istichara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Istichara.Designer.cs">
+      <DependentUpon>Istichara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jalssa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jalssa.Designer.cs">
+      <DependentUpon>Jalssa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Obligation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Obligation.Designer.cs">
+      <DependentUpon>Obligation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SendEmail.Designer.cs">
+      <DependentUpon>SendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PptCl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PptCl.Designer.cs">
+      <DependentUpon>PptCl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Wad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wad.Designer.cs">
+      <DependentUpon>Wad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wam.Designer.cs">
+      <DependentUpon>Wam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ChrObligation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ChrObligation.Designer.cs">
+      <DependentUpon>ChrObligation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CrhAffr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CrhAffr.Designer.cs">
+      <DependentUpon>CrhAffr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CrhAlerts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CrhAlerts.Designer.cs">
+      <DependentUpon>CrhAlerts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CrhClnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CrhClnt.Designer.cs">
+      <DependentUpon>CrhClnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CrhConst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CrhConst.Designer.cs">
+      <DependentUpon>CrhConst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CrhDDjest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CrhDDjest.Designer.cs">
+      <DependentUpon>CrhDDjest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CrhDGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CrhDGeneral.Designer.cs">
+      <DependentUpon>CrhDGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CrhMMang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CrhMMang.Designer.cs">
+      <DependentUpon>CrhMMang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CrhSes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CrhSes.Designer.cs">
+      <DependentUpon>CrhSes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RptAff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptAff.Designer.cs">
+      <DependentUpon>RptAff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RptAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptAlert.Designer.cs">
+      <DependentUpon>RptAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RptCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptCon.Designer.cs">
+      <DependentUpon>RptCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RptDG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptDG.Designer.cs">
+      <DependentUpon>RptDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RptDj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptDj.Designer.cs">
+      <DependentUpon>RptDj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RptMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptMes.Designer.cs">
+      <DependentUpon>RptMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RptOb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptOb.Designer.cs">
+      <DependentUpon>RptOb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RptSes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptSes.Designer.cs">
+      <DependentUpon>RptSes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinglCl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinglCl.Designer.cs">
+      <DependentUpon>SinglCl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMDLDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMDLDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Affaire.resx">
+      <DependentUpon>Affaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bmi.resx">
+      <DependentUpon>Bmi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChLogin.resx">
+      <DependentUpon>ChLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmailSiting.resx">
+      <DependentUpon>EmailSiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Istichara.resx">
+      <DependentUpon>Istichara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jalssa.resx">
+      <DependentUpon>Jalssa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Obligation.resx">
+      <DependentUpon>Obligation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SendEmail.resx">
+      <DependentUpon>SendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PptCl.resx">
+      <DependentUpon>PptCl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\Wad.resx">
+      <DependentUpon>Wad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wam.resx">
+      <DependentUpon>Wam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report10.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="Report7.rdlc" />
+    <EmbeddedResource Include="Report8.rdlc" />
+    <EmbeddedResource Include="Report9.rdlc" />
+    <EmbeddedResource Include="Reports\ChrObligation.resx">
+      <DependentUpon>ChrObligation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrhAffr.resx">
+      <DependentUpon>CrhAffr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrhAlerts.resx">
+      <DependentUpon>CrhAlerts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrhClnt.resx">
+      <DependentUpon>CrhClnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrhConst.resx">
+      <DependentUpon>CrhConst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrhDDjest.resx">
+      <DependentUpon>CrhDDjest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrhDGeneral.resx">
+      <DependentUpon>CrhDGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrhMMang.resx">
+      <DependentUpon>CrhMMang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrhSes.resx">
+      <DependentUpon>CrhSes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAff.resx">
+      <DependentUpon>RptAff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAlert.resx">
+      <DependentUpon>RptAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCon.resx">
+      <DependentUpon>RptCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptDG.resx">
+      <DependentUpon>RptDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptDj.resx">
+      <DependentUpon>RptDj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptMes.resx">
+      <DependentUpon>RptMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptOb.resx">
+      <DependentUpon>RptOb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSes.resx">
+      <DependentUpon>RptSes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinglCl.resx">
+      <DependentUpon>SinglCl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SMDLDBDataSet.xsc">
+      <DependentUpon>SMDLDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SMDLDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMDLDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMDLDBDataSet.xss">
+      <DependentUpon>SMDLDBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
