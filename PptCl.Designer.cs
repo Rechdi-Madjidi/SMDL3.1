@@ -71,7 +71,7 @@
             this.ClientSize = new System.Drawing.Size(801, 414);
             this.Controls.Add(this.reportViewer1);
             this.Name = "PptCl";
-            this.Text = "الطباعة";
+            this.Text = ".الطباعة";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PptCl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ClientBindingSource)).EndInit();
