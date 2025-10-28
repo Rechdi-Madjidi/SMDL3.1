@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+
+            // Initializig the Components ...
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.ClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -87,4 +89,5 @@
         public SMDLDBDataSetTableAdapters.ClientTableAdapter ClientTableAdapter;
         public Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
+
 }
